@@ -1,19 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Thinh Dang</title>
+  <style>
+    body {
+      margin: 0;
+      background: #1e1e1e;
+      color: #d4d4d4;
+      font-family: "Courier New", monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .code-box {
+      max-width: 800px;
+      padding: 30px;
+      background: #252526;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .key { color: #9cdcfe; }
+    .string { color: #ce9178; }
+    .link {
+      color: #4fc1ff;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello, I’m Thinh Dang 👋</h1>
-  <p>Civil Engineer | Mining | Power Apps Developer</p>
 
-  <h2>Projects</h2>
-  <ul>
-    <li>Drill PLOD App</li>
-    <li>QAQC Design App</li>
-  </ul>
+<div class="code-box">
+<pre>
+{
+  <span class="key">name</span>: <span class="string">"Thinh Dang 🇻🇳 🇦🇺"</span>,
+  <span class="key">role</span>: <span class="string">"Civil Engineer | Mining | Power Apps"</span>,
 
-  <h2>Contact</h2>
-  <p>Email: dptthinh1811@gmail.</p>
+  <span class="key">projects</span>: [
+    <span class="string">"Drill PLOD App"</span>,
+    <span class="string">"QAQC Design App"</span>
+  ],
+
+  <span class="key">experience</span>: [
+    <span class="string">"FIFO Mining - Juddrill"</span>,
+    <span class="string">"Engineering Student - ECU"</span>
+  ],
+
+  <span class="key">contact</span>: {
+    email: <span class="string">"your@email.com"</span>,
+    linkedin: <span class="link">"your-linkedin"</span>
+  },
+
+  <span class="key">quote</span>: [
+    <span class="string">"Keep learning, keep building."</span>
+  ]
+}
+</pre>
+</div>
+
 </body>
 </html>
